@@ -3,6 +3,10 @@
 <head>
     <title>Test1 - NOC</title>
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/vendors/scrolloverflow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.min.js"></script>
     <style>
         * {
             margin: 0;
@@ -18,30 +22,94 @@
             border: none
         }
 
-        .mainpage-1 {
-        	width: 100%;
-        	height: 1000px;
-            background: linear-gradient(to bottom, #5ea1ff, #000649);
+        .s1 {
+            background-color: aquamarine;
         }
 
-        .mainpage-2 {
-            /*width: 750px;
-            height: 1334px;*/
-            background: #0c0b0b;
+        .right-content {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 50%;
+            margin-left: -100px;
+            top: 50%;
+            margin-top: -100px;
+            font-size: 32px;
         }
 
-        video {
-        	width: 100%;
-    		height: 100%;
+        .water1 {
+            position: absolute;
+            width: 50%;
+        }
+
+        .s2 {
+            background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Splash_2_color.jpg/789px-Splash_2_color.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .s3 {
+            background-image: url("download.jpg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .s4 {
+            background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/4f/DARK_CLOUDS_OF_FACTORY_SMOKE_OBSCURE_CLARK_AVENUE_BRIDGE_-_NARA_-_550179.jpg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .s5 {
+            background-color: #cccccc;
+            background-image: url("https://github.com/siyu1915/noc/raw/master/images.jpg"); /*background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/ff/Air-pollution-taiwan.JPG");*/
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+        }
+
+        .mtitle {
+            color: whitesmoke;
         }
     </style>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#fullpage').fullpage({
+                anchors: ['section1', 'section2', 'section3', 'section4', 'section5'],
+                afterLoad: function (anchorLink, index) {
+                    if (index == 2) {
+
+                    }
+                }
+            });
+        });
+    </script>
 </head>
 <body>
-    <div class="mainpage-1">
-    	<h1>Hello</h1>
-    </div>
-    <div class="mainpage-2">
-
+    <div id="fullpage">
+        <div class="section s1">
+            <div class="s1-container">
+                <div class="bg bg-blur"></div>
+                <div class="left-separator"></div>
+                <div class="right-content">
+                    <h1>&nbsp;&nbsp;环保</h1>
+                </div>
+            </div>
+        </div>
+        <div class="section s2">
+            <h1 class="mtitle">保护水资源</h1>
+        </div>
+        <div class="section s3">
+            <h1 class="mtitle">保护树木</h1>
+        </div>
+        <div class="section s4">
+            <h1 class="mtitle">减少尾气排放</h1>
+        </div>
+        <div class="section s5">
+            <h1 class="mtitle">垃圾分类</h1>
+        </div>
     </div>
 </body>
 </html>
