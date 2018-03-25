@@ -42,6 +42,7 @@
             font-size: 32px;
             color: white;
             border: white solid 1px;
+            padding-left: 5px;
         }
 
         .right-content2 {
@@ -83,14 +84,53 @@
 
         .s5 {
             background-color: #cccccc;
-            background-image: url("https://raw.githubusercontent.com/siyu1915/noc/master/images.jpg"); /*background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/ff/Air-pollution-taiwan.JPG");*/
+            background-image: url("49abfeecbcd21918e5ba6755541c60dd.jpg");
+             /*background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/ff/Air-pollution-taiwan.JPG");
+				49abfeecbcd21918e5ba6755541c60dd.jpg
+             */
             background-repeat: no-repeat;
             background-position: center center;
             background-size: contain;
         }
 
+        .mdiv {
+        	position: absolute;
+            left: 40%;
+            margin-left: -100px;
+            top: 30%;
+            margin-top: -50px;
+            background-color: rgba(0,0,0,0.7);
+            width: 80%;
+            height: auto;
+            color: white;
+        }
+
         .mtitle {
-            color: whitesmoke;
+        	/*position: absolute;
+            color: #000000;
+            left: 40%;
+            margin-left: -100px;
+            top: 30%;
+            margin-top: -50px;
+            ;*/
+            position: relative;
+            width: auto;
+            border-bottom: #000000 solid 1px;
+            padding-bottom: 5px;
+        }
+
+        .mcontent {
+        	position: relative;
+        	padding: 5px;
+        	/*position: absolute;
+            color: purple;
+            left: 40%;
+            margin-left: -100px;
+            top: 40%;
+            margin-top: -50px;
+            width: 70%;
+            height: auto;
+            background-color: #cccccc;*/
         }
     </style>
     <script type="text/javascript">
@@ -104,6 +144,8 @@
                 }
             });
         });
+        var mySound = new Audio("https://github.com/siyu1915/noc/raw/master/Bandari%20-%20%E5%AE%89%E5%A6%AE%E7%9A%84%E4%BB%99%E5%A2%83.mp3");
+        mySound.play();
     </script>
 </head>
 <body>
@@ -121,16 +163,39 @@
         </div>
     </div>
     <div class="section s2">
-        <h1 class="mtitle">保护水资源</h1>
+    	<div class="mdiv">
+    		<h1 class="mtitle">保护水资源</h1>
+	        <div class="mcontent">
+	        	联合国人口行动组织1993年提出的严重缺水国家的水资源量的标准是小于或等于1000立方米/（人·年），水资源紧迫国家的标准是1000~1667立方米/（人·年）。我国水资源丰富，但人均水资源量少，不足世界人均水平的1/3，正常年份全国年缺水量达500多亿立方米，近三分之二城市不同程度缺水。根据1997年人口计算，人均水资源量为2200立方米，在世界仅占第109位。
+	        </div>
+    	</div>
+        
     </div>
     <div class="section s3">
-        <h1 class="mtitle">保护树木</h1>
+    	<div class="mdiv">
+    		<h1 class="mtitle">保护树木</h1>
+	        <div class="mcontent">
+	        	森林与所在空间的非生物环境有机地结合在一起，构成完整的生态系统。森林是地球上最大的陆地生态系统，是全球生物圈中重要的一环，是地球上的基因库、碳贮库、蓄水库和能源库，对维系整个地球的生态平衡起着至关重要的作用，是人类赖以生存和发展的资源和环境，人类需要保护森林。
+	        </div>
+    	</div>
+        
     </div>
     <div class="section s4">
-        <h1 class="mtitle">减少尾气排放</h1>
+    	<div class="mdiv">
+    		<h1 class="mtitle">减少尾气排放</h1>
+	        <div class="mcontent">
+	        	机动车辆或其他设备在工作过程中所排放出的废气。在现代文明，汽车已经成为人类不可缺少的交通运输工具。自从1886年第一辆汽车诞生以来，它给人们的生活和工作带来了极大的便利，也已经发展成为近现代物质文明的支柱之一。但是，我们也应该看到，在汽车产业高速发展、汽车产量和保有量不断增加的同时，汽车也带来了大气污染，即汽车尾气污染。
+	        </div>
+    	</div>
+        
     </div>
     <div class="section s5">
-        <h1 class="mtitle">垃圾分类</h1>
+    	<div class="mdiv">
+    		<h1 class="mtitle">垃圾分类</h1>
+	        <div class="mcontent">
+	        	垃圾分类是对垃圾收集处置传统方式的改革，是对垃圾进行有效处置的一种科学管理方法。人们面对日益增长的垃圾产量和环境状况恶化的局面，如何通过垃圾分类管理，最大限度地实现垃圾资源利用，减少垃圾处置量，改善生存环境质量，是当前世界各国共同关注的迫切问题之一。
+	        </div>
+    	</div>
     </div>
 </div>
 </body>
