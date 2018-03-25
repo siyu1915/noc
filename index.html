@@ -94,6 +94,7 @@
         }
 
         .mdiv {
+        	display: none;
         	position: absolute;
             left: 40%;
             margin-left: -100px;
@@ -138,9 +139,13 @@
             $('#fullpage').fullpage({
                 anchors: ['section1', 'section2', 'section3', 'section4', 'section5'],
                 afterLoad: function (anchorLink, index) {
-                    if (index == 2) {
-
-                    }
+                	//console.log($(".mdiv")[index-2]);
+                	if (index === 1) {
+                		return;
+                	}
+                	console.log(index);
+                	console.log($(".mdiv")[index-2]);
+                	$(".mdiv").eq(index - 2).slideDown(500);
                 }
             });
         });
