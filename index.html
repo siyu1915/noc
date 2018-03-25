@@ -2,9 +2,11 @@
 <html>
 <head>
     <title>Test1 - NOC</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/vendors/scrolloverflow.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.min.js"></script>
     <style>
@@ -23,18 +25,35 @@
         }
 
         .s1 {
-            background-color: aquamarine;
+            background-image: url("https://github.com/siyu1915/noc/raw/master/android-960x854-wallpaper-1924.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
         }
 
         .right-content {
             width: 200px;
-            height: 200px;
+            height: 45px;
             position: absolute;
             left: 50%;
             margin-left: -100px;
             top: 50%;
             margin-top: -100px;
             font-size: 32px;
+            color: white;
+            border: white solid 1px;
+        }
+
+        .right-content2 {
+            width: 200px;
+            height: 45px;
+            position: absolute;
+            left: 50%;
+            margin-left: -100px;
+            top: 50%;
+            margin-top: -50px;
+            font-size: 18px;
+            color: white;
         }
 
         .water1 {
@@ -88,28 +107,31 @@
     </script>
 </head>
 <body>
-    <div id="fullpage">
-        <div class="section s1">
-            <div class="s1-container">
-                <div class="bg bg-blur"></div>
-                <div class="left-separator"></div>
-                <div class="right-content">
-                    <h1>&nbsp;&nbsp;环保</h1>
-                </div>
+<div id="fullpage">
+    <div class="section s1">
+        <div class="s1-container">
+            <div class="bg bg-blur"></div>
+            <div class="left-separator"></div>
+            <div class="right-content">
+                环保公益主页
+            </div>
+            <div class="right-content2">
+                猫的祈祷，换来的是凝视
             </div>
         </div>
-        <div class="section s2">
-            <h1 class="mtitle">保护水资源</h1>
-        </div>
-        <div class="section s3">
-            <h1 class="mtitle">保护树木</h1>
-        </div>
-        <div class="section s4">
-            <h1 class="mtitle">减少尾气排放</h1>
-        </div>
-        <div class="section s5">
-            <h1 class="mtitle">垃圾分类</h1>
-        </div>
     </div>
+    <div class="section s2">
+        <h1 class="mtitle">保护水资源</h1>
+    </div>
+    <div class="section s3">
+        <h1 class="mtitle">保护树木</h1>
+    </div>
+    <div class="section s4">
+        <h1 class="mtitle">减少尾气排放</h1>
+    </div>
+    <div class="section s5">
+        <h1 class="mtitle">垃圾分类</h1>
+    </div>
+</div>
 </body>
 </html>
